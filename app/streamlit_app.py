@@ -33,7 +33,7 @@ SUMMARY_VER  = 1
 OUTREACH_VER = 1
 
 st.set_page_config(
-    page_title = "Firmable — Sales Intelligence",
+    page_title = "ThreatScope — Sales Intelligence",
     page_icon  = "🛡️",
     layout     = "wide",
 )
@@ -177,7 +177,7 @@ def call_api(endpoint: str, method="POST") -> dict | None:
 
 def main():
     # ── Header ───────────────────────────────────────────────────────────────
-    st.title("🛡️ Firmable Sales Intelligence")
+    st.title("🛡️ ThreatScope Sales Intelligence")
     st.caption(
         "Identify and prioritise businesses most likely to need cybersecurity software — "
         "powered by internet-exposure signals from live scan data."
@@ -194,7 +194,7 @@ def main():
 
     # ── Sidebar filters ───────────────────────────────────────────────────────
     with st.sidebar:
-        st.header("🎯 Filter Prospects")
+        st.header("🔍 Filter Prospects")
 
         min_score = st.slider("Min Priority Score", 0, 100, 30, step=5)
         search    = st.text_input("🔍 Company name", placeholder="e.g. Acme Corp")
@@ -235,7 +235,7 @@ def main():
         return
 
     # ── Prospect table ────────────────────────────────────────────────────────
-    st.subheader(f"🎯 Prospects ({len(orgs):,})")
+    st.subheader(f"📊 Prospects ({len(orgs):,})")
 
     display_rows = []
     for o in orgs:
