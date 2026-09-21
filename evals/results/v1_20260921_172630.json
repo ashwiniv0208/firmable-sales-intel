@@ -1,0 +1,261 @@
+{
+  "prompt_version": 1,
+  "timestamp": "2026-09-21T11:56:30.959082+00:00",
+  "n_examples": 25,
+  "n_ok": 7,
+  "mean_recall": 0.529,
+  "mean_precision": 1.0,
+  "hallucination_rate": 0.0,
+  "sales_angle_rate": 0.857,
+  "length_ok_rate": 1.0,
+  "total_cost_usd": 0.0,
+  "results": [
+    {
+      "id": 1,
+      "org": "Meridian Financial Services",
+      "status": "error",
+      "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "id": 2,
+      "org": "Apex Healthcare Group",
+      "status": "error",
+      "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "id": 3,
+      "org": "NovaTech Manufacturing",
+      "status": "error",
+      "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "id": 4,
+      "org": "Cloudflare, Inc.",
+      "status": "ok",
+      "cached": false,
+      "output": "The organization's primary security risk is 200 open HTTP endpoints operating without authentication across its network. This exposure spans an external footprint of 450 exposed IP addresses listening on web",
+      "cost_usd": 0,
+      "recall": 0.0,
+      "precision": 1.0,
+      "no_hallucination": true,
+      "has_sales_angle": true,
+      "length_ok": true,
+      "expected_hits": [],
+      "hallucinations": [],
+      "sentence_count": 2
+    },
+    {
+      "id": 5,
+      "org": "Sentry Logistics Ltd",
+      "status": "ok",
+      "cached": false,
+      "output": "Sentry Logistics Ltd exposes a high-risk Redis database on port 6379 directly to the internet. The organisation's attack surface consists of 6 exposed IPs running SSH, nginx, and four open HTTP endpoints alongside self-signed TLS certificates. Pitch Attack Surface Management to target immediate database exposure remediation and secure their public-facing infrastructure.",
+      "cost_usd": 0,
+      "recall": 0.8,
+      "precision": 1.0,
+      "no_hallucination": true,
+      "has_sales_angle": true,
+      "length_ok": true,
+      "expected_hits": [
+        "Redis",
+        "6379",
+        "self-signed",
+        "logistics"
+      ],
+      "hallucinations": [],
+      "sentence_count": 3
+    },
+    {
+      "id": 6,
+      "org": "Vega Insurance Partners",
+      "status": "ok",
+      "cached": false,
+      "output": "Vega Insurance Partners' most critical security risk is the public exposure of legacy, insecure PPTP VPN infrastructure on port 1723 alongside visible IPsec VPN services. Their overall attack surface comprises 11 exposed IPs running Microsoft IIS across four open ports, which includes 5 unauthenticated HTTP endpoints. Pitch Zero Trust Network Access (ZTNA) and Attack Surface Management (ASM) to help them replace obsolete VPN protocols and secure unauthenticated web assets.",
+      "cost_usd": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "no_hallucination": true,
+      "has_sales_angle": true,
+      "length_ok": true,
+      "expected_hits": [
+        "VPN",
+        "PPTP",
+        "1723",
+        "visible",
+        "insurance"
+      ],
+      "hallucinations": [],
+      "sentence_count": 3
+    },
+    {
+      "id": 7,
+      "org": "Hartwell Law Group",
+      "status": "ok",
+      "cached": false,
+      "output": "Hartwell Law Group directly exposes high-risk SMB file-sharing services running Samba on ports 139 and 445 to the public internet. Their attack surface spans 3 exposed IPs across",
+      "cost_usd": 0,
+      "recall": 0.714,
+      "precision": 1.0,
+      "no_hallucination": true,
+      "has_sales_angle": false,
+      "length_ok": true,
+      "expected_hits": [
+        "SMB",
+        "445",
+        "139",
+        "Samba",
+        "law"
+      ],
+      "hallucinations": [],
+      "sentence_count": 2
+    },
+    {
+      "id": 8,
+      "org": "Orion Energy Systems",
+      "status": "error",
+      "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "id": 9,
+      "org": "BlueWave Retail Corp",
+      "status": "error",
+      "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "id": 10,
+      "org": "CrestView Tech Startup",
+      "status": "ok",
+      "cached": false,
+      "output": "CrestView Tech Startup exposes two unauthenticated open HTTP services directly to the public internet. Their DigitalOcean environment consists of 2 exposed IPs listening on ports 22, 80, and 8080 running nginx web servers. Position web application security and attack surface management solutions to help them secure unauthenticated web endpoints and restrict access to management ports.",
+      "cost_usd": 0,
+      "recall": 0.0,
+      "precision": 1.0,
+      "no_hallucination": true,
+      "has_sales_angle": true,
+      "length_ok": true,
+      "expected_hits": [],
+      "hallucinations": [],
+      "sentence_count": 3
+    },
+    {
+      "id": 11,
+      "org": "Pacific Shipping Authority",
+      "status": "error",
+      "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "id": 12,
+      "org": "TrustBank Financial",
+      "status": "error",
+      "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "id": 13,
+      "org": "Nexus Hospital Network",
+      "status": "error",
+      "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "id": 14,
+      "org": "Ironclad Defense Contractors",
+      "status": "ok",
+      "cached": false,
+      "output": "Ironclad Defense Contractors exposes four unauthenticated open HTTP services directly to the public internet. Their external attack surface consists of 8 exposed IPs running Apache httpd and OpenSSH across ports 22, 80, 443, and 8080 hosted on Lumen Technologies. Pitch our Attack Surface Management and web application security solutions to help them enforce strict authentication controls and secure exposed administrative interfaces.",
+      "cost_usd": 0,
+      "recall": 0.333,
+      "precision": 1.0,
+      "no_hallucination": true,
+      "has_sales_angle": true,
+      "length_ok": true,
+      "expected_hits": [
+        "auth",
+        "contractor"
+      ],
+      "hallucinations": [],
+      "sentence_count": 3
+    },
+    {
+      "id": 15,
+      "org": "Crimson Data Analytics",
+      "status": "ok",
+      "cached": false,
+      "output": "Crimson Data Analytics presents severe data exposure risks through publicly exposed Elasticsearch and MongoDB database instances hosted on AWS. The organisation's attack surface includes 12 exposed IP addresses with high-risk ports 9200, 9300, and 27017 active, alongside 7 open HTTP endpoints operating without authentication. Lead the conversation with attack surface management and cloud security posture management solutions to help them immediately restrict public database access and enforce cloud security controls.",
+      "cost_usd": 0,
+      "recall": 0.857,
+      "precision": 1.0,
+      "no_hallucination": true,
+      "has_sales_angle": true,
+      "length_ok": true,
+      "expected_hits": [
+        "Elasticsearch",
+        "9200",
+        "MongoDB",
+        "27017",
+        "analytics",
+        "data"
+      ],
+      "hallucinations": [],
+      "sentence_count": 3
+    },
+    {
+      "id": 16,
+      "org": "StellarPath Logistics",
+      "status": "error",
+      "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+      "id": 17,
+      "org": "GovNet Agency",
+      "status": "error",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 31.202748897s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.6-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '31s'}]}}"
+    },
+    {
+      "id": 18,
+      "org": "Quantum Pharma Research",
+      "status": "error",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 30.926002933s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.6-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '30s'}]}}"
+    },
+    {
+      "id": 19,
+      "org": "Cascade Cloud Services",
+      "status": "error",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 30.638762371s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '30s'}]}}"
+    },
+    {
+      "id": 20,
+      "org": "Delta Construction Group",
+      "status": "error",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 30.357156013s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '30s'}]}}"
+    },
+    {
+      "id": 21,
+      "org": "Vertex Media Group",
+      "status": "error",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 30.074833576s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '30s'}]}}"
+    },
+    {
+      "id": 22,
+      "org": "ArcLight Energy Solutions",
+      "status": "error",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 29.779325684s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '29s'}]}}"
+    },
+    {
+      "id": 23,
+      "org": "Mainstreet Bank",
+      "status": "error",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 29.498027714s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.6-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '29s'}]}}"
+    },
+    {
+      "id": 24,
+      "org": "Pioneer Agritech",
+      "status": "error",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 29.209541831s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '29s'}]}}"
+    },
+    {
+      "id": 25,
+      "org": "CrestNet Telecom",
+      "status": "error",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 28.924646123s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '28s'}]}}"
+    }
+  ]
+}
